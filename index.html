@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cam on ban</title>
+    <style>
+        body {
+            background: #111;
+            color: #00ff00;
+            font-family: monospace;
+            padding: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #output {
+            margin-top: 20px;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button onclick="run()">Nhận lời cảm ơn chân thành tại đây</button>
+
+    <div id="output"></div>
+
+    <script>
+        function run() {
+            let output = "";
+
+            for (let i = 0; i < 150; i++) {
+                output += "cam on ban! ";
+            }
+
+            document.getElementById("output").textContent = output;
+        }
+    </script>
+
+</body>
+</html>
